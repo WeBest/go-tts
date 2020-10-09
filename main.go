@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/loveshes/go-tts/core"
+	"./core"
 	"net/url"
 	"os"
 	"path/filepath"
