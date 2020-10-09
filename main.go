@@ -25,7 +25,7 @@ func main() {
 		urls := core.LoadFile(basePath + txtName)
 		fmt.Printf("\r分析文件%s完成       ", txtName)
 		// 创建文件
-		soundName := strings.Split(txtName, ".")[0] + "." + sc.Format
+		soundName := strings.Split(txtName, ".")[0] + "_" + sc.Voice + "." + sc.Format
 		file, err := os.OpenFile(soundName, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0666)
 		if err != nil {
 			fmt.Printf("error: %v", err)
